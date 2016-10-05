@@ -1,0 +1,38 @@
+<div class="form-group">
+  <label for="usr">Pattern:</label>
+  <input type="text" class="form-control" id="input-search">
+  <a class="btn btn-default" id="btn-search">Search</a> 
+</div>
+{{#this}}
+<div class="panel panel-primary material" data-id='{{id}}'>
+    <a href="#/materials/{{id}}">
+    <div class="panel-heading">
+        <div class="row">
+            <div class="col-xs-3">
+
+            </div>
+            <div class="col-xs-9 text-right">
+                <div class="huge">Publication date: {{createdOn}}</div> 
+            </div>
+            <div class="col-xs-9 text-left">
+                <h4>{{title}}</h4>
+                <p>{{description}}</p>
+                <p>{{body}}</p>
+            </div>
+            <div><img src="{{img}}" alt=""></div>
+        </div>
+    </div>
+    </a>
+    <span class="">rating: {{rating}}</span>
+    <span class="">Comments: {{commentsCount}}</span>
+    
+    <a href= "#/profiles/{{user.username}}">
+        
+        <div class="panel-footer">
+            <span class="pull-left">creator: {{user.username}}</span>
+
+            <div class="clearfix"></div>
+        </div>
+    </a>
+</div>
+{{/this}}

@@ -1,0 +1,25 @@
+{{#this}}
+<div class="panel  " >
+    <div class="panel-heading">
+        <div class="row">
+            <div class="col-xs-3">
+
+            </div>
+            <p>Addded on: {{createdOn}}</p>
+            <div class="col-xs-9 text-right">
+               
+            </div>
+            <div class="col-xs-9 text-left">
+                <h4>Title: {{title}}</h4>
+                <h5>Description: {{description}}</h5>
+                <h5>Category: {{category}}</h5>
+                
+                
+                <p><a href="#/materials/{{id}}">Material</a></p>
+                <p> By <a href="#/profiles/{{user.username}}">{{user.username}}</a></p>              
+                              
+            </div>
+           
+        </div>
+    </div>
+{{/this}}
